@@ -26,7 +26,7 @@ public class ScoreService {
     public Score update(Score score) {
         return scoreRepository.save(score);
     }
-    public void delete(Score score) {
-        scoreRepository.delete(score);
+    public void deleteByID(Long id) {
+        scoreRepository.deleteById(id);
     }
 }
